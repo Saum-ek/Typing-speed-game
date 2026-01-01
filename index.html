@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Game</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="src/output.css">
+</head>
+
+<body>
+    <div class=" w-full h-lvh flex justify-center items-center z-2">
+        <div class="h-120 w-200 border shadow rounded-xl p-10 border-gray-200 py-10 ">
+            <h1 class="text-4xl text-center font-serif">TYPING SPEED GAME</h1>
+
+            <div id="sentence" class="text-center py-6 my-5 bg-gray-100 rounded-xl"></div>
+            <input type="text" placeholder="write here....." id="typing"
+                class="border rounded-xl border-gray-200 p-5 text-left w-full h-30 shadow-md focus:outline-none">
+
+            <div class="flex justify-end">
+                <div class="border border-gray-100 rounded-lg px-5 my-3 mr-10  timer-shadow" id="timer"></div>
+            </div>
+
+           <div class="flex justify-center gap-5 py-5">
+              <button id="stats">
+                    Check Stats
+                </button>
+            <button id="restart">
+                Play Again
+            </button>
+           </div>
+
+        </div>
+    </div>
+
+    <div id="overly" class="bg-black h-lvh w-full opacity-80 z-50 fixed top-0 left-0 right-0 bottom-0 hidden">
+        <div class="flex justify-center items-center h-full">
+            <div class="bg-white p-8 rounded-xl shadow-lg z-60">
+                <ul id="info">
+                    <li id="correct">Word Typed Correctly :</li>
+                    <li id="error">Word Typed Incorrectly:</li>
+                    <li id="WPM">Word Per Minute:</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--JS-->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
